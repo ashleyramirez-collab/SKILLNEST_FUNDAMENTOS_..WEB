@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+.centrado {
+    text-align: center;
+}
+
+.encabezado_caja {
+    padding: 20px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.CENTRADOUP {
+    text-align: center;
+}
+
+.CENTRADOUP a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0c87c5;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.caja {
+    display: inline-block;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 10px;
+    border: solid 1px black;
+    overflow: hidden;
+
+}
+.encabezado_caja {
+    padding: 20px;
+    color: white;
+
+}
+.cuerpo_caja{
+    padding: 20px;
+}
+.cuerpo_caja p{
+    margin-bottom: 20px;
+}
+.azul{
+    background-color: #0c87c5;
+}
+.rojo {
+    background-color: #EE433A;
+}
+
+.verde {
+    background-color: #00C56A;
+
+}
+
+.caja1 {
+    display: inline-block;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 10px;
+    border: solid 1px black;
+    overflow: hidden;
+}
+.encabezado_caja{
+    padding: 20px;
+    color: white;
+}
+.cuerpo_caja{
+    padding: 20px;
+}
+.cuerpo_caja p{
+    margin-bottom: 20px;
+}
+.amarillo {
+    background-color: #cfd200;
+}
+.morado {
+    background-color: #a63aee;
+}
+
+.celeste {
+    background-color: #00b8c5;
+}

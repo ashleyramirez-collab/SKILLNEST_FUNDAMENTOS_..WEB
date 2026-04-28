@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*outline: solid 1px red;*/
+}
+    */Contabiliza bordes */
+
+.encabezado {
+    width: 100%;
+    background-color: rgb(143, 65, 216);
+    padding: 15px;
+}
+
+.titulo_header {
+    text-align: center;
+    color: black
+}
+
+.container {
+    outline: solid 1px grey;
+    margin: 0 auto;
+    width: 900px;
+    padding: 20px;
+}
+.row{
+    padding: 30px;
+}
+
+*/Tamaños ejemplos CSS*/ 
+
+.aceptar{
+    width: 100px;
+    height: 50px;
+}
+
+.caja1 {
+    width: 80%;
+    height: 200px;
+    background-color: rgb(111, 0, 255);
+}
+
+p {
+    font-size: 20px; /*Tamaño fijo*/
+}
+
+a {
+    font-size: 300%; 
+font-style: italic;
+}
+
+/* 📦 Manejo del contenido con overflow: hidden, scroll, auto 
+*/
+.caja {
+    width: 200px;
+    height: 100px;
+    display: inline-block; /*elementos en bloque o columnas */
+}
+.example1{
+    height: 100px;
+    width: 300px; 
+background-color: lightsteelblue;
+}
+.example2{ 
+    height: 100px;
+    width: 300px;
+background-color: mediumslateblue;
+}
+.example3{
+    height: 100px;
+    width: 300px;
+background-color: rgba(8, 109, 241, 0.822);
+}
+.hidden{ /*Oculta los elementos que sobresalen del contenedor */
+overflow: hidden
+}
+.scroll{
+    overflow: scroll;
+}
+.auto{
+    overflow: auto;
+}
+
+/* 🎨 Fondo y colores*/
+.banner {  
+    height:600px;
+    width: 100%;
+    background: rgb(24, 26, 25) url("/STACK_CSS/06_tamanos/static/images/haikyuu.png") no-repeat fixed center center;
+    background-size: 80%; /* aumenta el tamaño de la imagen */
+}
+/* 🟫 Bordes y estilos */
+.cancelar {
+    border: 2px dotted rgb(133, 8, 8); /* dotted: línea segmentada.......*/
+    padding: 15px;
+    cursor: pointer;
+}
+.articulo{
+    border: 2px solid rgb(74, 158, 214); /* solid: línea sólida*/
+    height: 50px;
+    width: 100px;
+}
+
+/* 🟢 Bordes redondeados */
+.boton_redondeado {
+    padding: 10px 40px;
+    border-radius: 15px; /* redondea esquinas*/
+    cursor: pointer;
+}
+
+.caja_redondeada {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 10px 16px;
+    background-color: darkslategrey;
+    color:white;
+    border-radius: 50%; /* 50% de radius: Círculo perfecto*/
+} 
+.cajitas{
+width: 100px;
+height: 40px;
+outline: solid 1px rgb(0, 0, 0);
+}
+.box1{
+background-color: cornflowerblue;
+padding:20px /* Padding aplicado en todos lados*/
+}
+.box2{
+background-color: rgb(238, 135, 187);
+padding-top: 0px; /*Espacio interno:arriba */
+padding-right: 5px; /* Espacio interno:derecha*/
+padding-bottom: 0px; /*Espacio interno:abajo*/
+padding-left: 5px; /*Espacio interno:izquierda*/
+/*padding: 0px 5px 0px 5px --> aplicando en todos lados*/
+/*padding: 0px 5px --> 0px del eje (Y) y 5px del eje(x)*/
+}
+.box3{
+background-color: beige;
+margin: 10px; /*Margen externo: Separa elementos*/
+}
+.box4{
+    background-color: grey;
+    margin: 0px 20px; /*eje X modificado con margin*/
+    padding: 5px 0px; /*eje Y modificado */
+}
+.box5{
+    float: left;
+    width: 40%;
+}

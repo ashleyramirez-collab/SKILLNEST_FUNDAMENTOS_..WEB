@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*outline: solid 1px red;*/
+}
+
+.container {
+    outline: solid 1px grey;
+    margin: 0 auto;
+    width: 900px;
+    padding: 30px;
+}
+
+.button_Buscar{
+    margin:auto;
+    padding: 5px 25px;
+    border: solid 2px black;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+.button_añadir{
+    margin: auto;
+    display: block;
+    padding: 10px 15px;
+    font-size: 20;
+    border: none; 
+    border-radius:  30px;
+    background-color: coral;
+    color:white
+}
+.button_crear{
+    margin: auto;
+    display: block;
+    padding: 10px 25px;
+    border: none;
+    background-color: rgb(0, 0, 255);
+    color:white;
+    box-shadow: 8px 8px 8px ;
+}

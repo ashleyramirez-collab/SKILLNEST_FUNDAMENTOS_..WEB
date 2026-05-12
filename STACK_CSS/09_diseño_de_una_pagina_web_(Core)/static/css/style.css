@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    background-color:rgb(30, 67, 102);
+    color: white;
+    text-align: center;
+    margin: 10px;
+    line-height: 70px;
+    font-weight: bold;
+}
+
+.menu{
+    margin-top: 40px;
+    background-color: rgb(48, 89, 122);
+}
+

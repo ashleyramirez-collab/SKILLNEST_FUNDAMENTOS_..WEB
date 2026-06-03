@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.barra-navegacion {
+    display: flex;
+    /*Flex aplicado en header*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: #08153ab7;
+}
+
+.logotipo {
+    font-size: 2.5rem;
+    /*Tamaño letra rem: es tamaño*/
+    font-weight: 700;
+    /*Grosor de la letra*/
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    /*Flex aplicado en navBar*/
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #f6f8fa;
+    font-weight: 500;
+}
+
+.boton-principal {
+    background-color: #2899e4d5;
+    color: white;
+    border: none;
+    /*Quita borde por defecto*/
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    /*Añade una mano cuando mouse para encima*/
+    border-radius: 6px;
+}
+
+.profile-avatar-container {
+    width: 130px;
+    height: 130px;
+    background-color: #e2e8f0;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* Efecto flotante sobre el banner */
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.avatar-placeholder {
+    font-size: 5rem;
+    color: #cbd5e1;
+    margin-top: 15px;
+    /* Ajuste visual del vector */
+}
+
+.profile-info {
+    padding: 80px 30px 40px 30px;
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.profile-info h2 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.profile-info h3 {
+    font-size: 1rem;
+    color: #a0aec0;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.bio-text {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 4px;
+}
+
+.skills-text {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.edit-link {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+/* --- SIDEBAR (COLUMNA DERECHA) --- */
+.sidebar {
+    flex: 1; /* Ocupa menos espacio */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-block {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.block-header h3 {
+    font-size: 1.1rem;
+    color: #2d3748;
+}
+
+.btn-view-all {
+    background: none;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.btn-view-all:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* LISTAS DE CONEXIONES */
+.connection-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.connection-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mini-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mini-avatar i {
+    font-size: 1.6rem;
+    color: #cbd5e1;
+    margin-top: 5px;
+}
+
+.user-meta span {
+    font-size: 0.95rem;
+    color: #2d3748;
+}
+
+/* Iconos de Aceptación / Rechazo */
+.action-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.accept-icon {
+    color: #2ecc71;
+    transition: opacity 0.2s;
+}
+
+.reject-icon {
+    color: #e74c3c;
+    transition: opacity 0.2s;
+}
+
+.accept-icon:hover, .reject-icon:hover {
+    opacity: 0.7;
+}

@@ -1,66 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ashley Ramirez">
-    <title>Pagina de perfil</title>
-    <!-- Link css -->
+    <title>Perfil de Usuario</title>
     <link rel="stylesheet" href="static/css/style.css ">
 </head>
 
 <body>
-    <header class="barra-navegacion">
-        <div class="logotipo">Perfil</div>
-        <div class="nav">
-            <a href="">Inicio</a>
-            <a href="">Mi perfil</a>
-            <a href="">Conexiones</a>
-            <button class="boton-principal">Cerrar sesión</button>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Perfil</h1>
+            <nav class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#" class="active">Mi perfil</a>
+                <a href="#">Conexiones</a>
+                <button class="btn-logout">Cerrar sesión</button>
+            </nav>
         </div>
-        </nav>
     </header>
-    <main class="contenedor-principal">
-        <section class="columna-izquierda">
-            <div class="tarjeta-perfil">
-                <div class="superior-tarjeta">
-                    <i class="bi bi-person-fill avatar-placeholder"></i>
+
+    <div class="dashboard-container">
+
+        <main class="main-content">
+            <div class="profile-card">
+                <div class="banner-blue"></div>
+                <div class="profile-avatar-container">
+                    <i class="bi bi-person-fill avatar-icon"></i>
                 </div>
-                <div class="descripcion-tarjeta">
-                    <img src="static/images/user-icon.png" alt="imagen-dentro">
-                    <h1>Jane Doe</h1>
-                    <h3>Bergen, Noruega</h3>
-                    <p class="explicacion">Desarrolladora Frontend Conocimientos en HTML, CSS, JavaScript
-                    </p>
-                    <a href="#"> ⚙ Editar perfil</a>
+                <div class="profile-info">
+                    <h2>Jane Doe</h2>
+                    <p class="location">Bergen, Noruega</p>
+                    <p class="description">Desarrolladora Frontend</p>
+                    <p class="skills">Conocimientos en HTML, CSS, JavaScript</p>
+                    <a href="#" class="edit-profile-btn">
+                        <i class="bi bi-gear-fill"></i> Editar perfil
+                    </a>
                 </div>
             </div>
-        </section>
-       <aside class="sidebar">
-           
-            <div class="sidebar-block">
-                <div class="block-header">
+        </main>
+
+        <aside class="sidebar-content">
+
+            <div class="side-card">
+                <div class="side-card-header">
                     <h3>Solicitudes de conexión</h3>
                     <button class="btn-view-all">Ver todas</button>
                 </div>
                 <div class="connection-list">
                     <div class="connection-item">
                         <div class="user-meta">
-                            <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
+                            <i class="bi bi-person-circle list-avatar"></i>
                             <span>Steve Jobs</span>
                         </div>
-                        <div class="action-icons">
+                        <div class="actions-icons">
                             <i class="bi bi-check-circle-fill accept-icon"></i>
                             <i class="bi bi-x-circle-fill reject-icon"></i>
                         </div>
                     </div>
                     <div class="connection-item">
                         <div class="user-meta">
-                            <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
+                            <i class="bi bi-person-circle list-avatar"></i>
                             <span>Bill Gates</span>
                         </div>
-                        <div class="action-icons">
+                        <div class="actions-icons">
                             <i class="bi bi-check-circle-fill accept-icon"></i>
                             <i class="bi bi-x-circle-fill reject-icon"></i>
                         </div>
@@ -68,42 +74,5 @@
                 </div>
             </div>
 
-            <div class="sidebar-block">
-                <div class="block-header">
-                    <h3>Tus conexiones</h3>
-                    <button class="btn-view-all">Ver todas</button>
-                </div>
-                <div class="connection-list">
-                    <div class="connection-item">
-                        <div class="user-meta">
-                            <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
-                            <span>Richard Stallman</span>
-                        </div>
-                    </div>
-                    <div class="connection-item">
-                        <div class="user-meta">
-                            <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
-                            <span>Linus Torvalds</span>
-                        </div>
-                    </div>
-                    <div class="connection-item">
-                        <div class="user-meta">
-                            <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
-                            <span>Ada Lovelace</span>
-                        </div>
-                    </div>
-                    <div class="connection-item">
-                        <div class="user-meta">
-                            <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
-                            <span>Grace Hopper</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </aside>
-
-    </main>
-
-</body>
-</html>
+            <div class="side-card">
+                <div class="side-card-header">

@@ -1,167 +1,203 @@
+/* --- Reset y Variables Globales --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Estilos generales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    color: #333333;
 }
 
-.barra-navegacion {
+/* --- Estilos del Header / Navbar --- */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+}
+
+.nav-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    /*Flex aplicado en header*/
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
-    background-color: #08153ab7;
 }
 
-.logotipo {
-    font-size: 2.5rem;
-    /*Tamaño letra rem: es tamaño*/
-    font-weight: 700;
-    /*Grosor de la letra*/
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
     color: #ffffff;
 }
 
-.nav {
+.btn-logout {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: #2980b9;
+}
+
+/* --- Layout Principal (Contenedor Dashboard) --- */
+.dashboard-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
     display: flex;
-    /*Flex aplicado en navBar*/
-    align-items: center;
     gap: 30px;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #f6f8fa;
-    font-weight: 500;
+.main-content {
+    flex: 2; /* Ocupa más espacio proporcionalmente */
 }
 
-.boton-principal {
-    background-color: #2899e4d5;
-    color: white;
-    border: none;
-    /*Quita borde por defecto*/
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    /*Añade una mano cuando mouse para encima*/
-    border-radius: 6px;
-}
-
-.profile-avatar-container {
-    width: 130px;
-    height: 130px;
-    background-color: #e2e8f0;
-    border-radius: 50%;
-    border: 5px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-    /* Efecto flotante sobre el banner */
-    position: absolute;
-    top: 85px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.avatar-placeholder {
-    font-size: 5rem;
-    color: #cbd5e1;
-    margin-top: 15px;
-    /* Ajuste visual del vector */
-}
-
-.profile-info {
-    padding: 80px 30px 40px 30px;
-    text-align: center;
-}
-
-.profile-info h2 {
-    font-size: 1.8rem;
-    color: #2d3748;
-    margin-bottom: 5px;
-}
-
-.profile-info h2 {
-    font-size: 1.8rem;
-    color: #2d3748;
-    margin-bottom: 5px;
-}
-
-.profile-info h3 {
-    font-size: 1rem;
-    color: #a0aec0;
-    font-weight: normal;
-    margin-bottom: 15px;
-}
-
-.bio-text {
-    font-size: 1rem;
-    color: #4a5568;
-    margin-bottom: 4px;
-}
-
-.skills-text {
-    font-size: 0.95rem;
-    color: #4a5568;
-    margin-bottom: 20px;
-}
-
-.edit-link {
-    color: #3498db;
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.edit-link:hover {
-    text-decoration: underline;
-}
-
-/* --- SIDEBAR (COLUMNA DERECHA) --- */
-.sidebar {
-    flex: 1; /* Ocupa menos espacio */
+.sidebar-content {
+    flex: 1; /* Ocupa el espacio lateral derecho */
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.sidebar-block {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* --- Tarjeta de Perfil Principal (Jane Doe) --- */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding-bottom: 30px;
 }
 
-.block-header {
+.banner-blue {
+    background-color: #3498db;
+    height: 120px;
+    width: 100%;
+}
+
+.profile-avatar-container {
+    width: 110px;
+    height: 110px;
+    background-color: #e2e8f0;
+    border: 4px solid white;
+    border-radius: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.avatar-icon {
+    font-size: 70px;
+    color: #cbd5e1;
+    margin-top: 15px; /* Ajuste visual para el ícono */
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 70px;
+    padding: 0 20px;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.location {
+    font-size: 14px;
+    color: #a0aec0;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 15px;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.skills {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 4px;
     margin-bottom: 15px;
 }
 
-.block-header h3 {
-    font-size: 1.1rem;
+.edit-profile-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.edit-profile-btn:hover {
+    text-decoration: underline;
+}
+
+/* --- Tarjetas del Menú Lateral (Sidebar) --- */
+.side-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.side-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.side-card-header h3 {
+    font-size: 16px;
     color: #2d3748;
+    font-weight: bold;
 }
 
 .btn-view-all {
-    background: none;
+    background: transparent;
     border: 1px solid #3498db;
     color: #3498db;
-    padding: 4px 10px;
+    padding: 4px 12px;
+    font-size: 12px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.85rem;
+    font-weight: bold;
     transition: all 0.2s;
 }
 
@@ -170,7 +206,7 @@ body {
     color: white;
 }
 
-/* LISTAS DE CONEXIONES */
+/* --- Listas de Usuarios Internas --- */
 .connection-list {
     display: flex;
     flex-direction: column;
@@ -187,48 +223,34 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    font-size: 14px;
+    color: #4a5568;
 }
 
-.mini-avatar {
-    width: 40px;
-    height: 40px;
-    background-color: #e2e8f0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.mini-avatar i {
-    font-size: 1.6rem;
+.list-avatar {
+    font-size: 28px;
     color: #cbd5e1;
-    margin-top: 5px;
 }
 
-.user-meta span {
-    font-size: 0.95rem;
-    color: #2d3748;
-}
-
-/* Iconos de Aceptación / Rechazo */
-.action-icons {
+/* Íconos de acción (Aceptar / Rechazar) */
+.actions-icons {
     display: flex;
-    gap: 10px;
-    font-size: 1.3rem;
+    gap: 8px;
+    font-size: 18px;
     cursor: pointer;
 }
 
 .accept-icon {
     color: #2ecc71;
-    transition: opacity 0.2s;
+    transition: transform 0.1s;
 }
 
 .reject-icon {
     color: #e74c3c;
-    transition: opacity 0.2s;
+    transition: transform 0.1s;
 }
 
 .accept-icon:hover, .reject-icon:hover {
-    opacity: 0.7;
+    transform: scale(1.15);
 }
+
